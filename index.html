@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="margin:0px; padding: 0px;">
+    
+    <div style="width:100%; height:50px; background-color: black; margin-top:-20px;">
+        <h3 style="color:white; padding: 15px; margin-left:40px; font-family: ubuntu;">ToDo List</h3>
+    </div>
+
+    <div style="width:60%; height:500px; background-color:lightgray; margin:auto; margin-top:20px;">
+        <div style="width:100%; height:30px; font-family: ubuntu; font-size:36px; background-color: white;">
+            <p style="top:-15px; position:relative;">ToDo List</p>
+        </div>
+
+        <br>
+
+        <div id="list" style="width:70%; height:30px; margin:auto;">
+            <form style="">
+                <input id="activity" type="text" name="activity" style="width:380px; height:30px;">
+                <button class="submit" type="submit" value="Add" style="width:70px;height:30px; background-color: gray;">Add</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script>
+        var activity = document.getElementById('activity');
+        var submit = document.querySelector('.submit');
+
+        submit.addEventListener('click', addTask);
+    
+        function addTask(a){
+            a.preventDefault();
+            var task = document.createElement('p');
+            task.append(activity.value);
+            document.getElementById('list').append(task);
+            document.getElementById('activity').value = "";
+            task.onclick = removeTask;
+        } 
+
+        function removeTask(e){
+            e.target.parentElement.removeChild(e.target);
+        }
+
+    </script>
+
+</body>
+
+</html>
