@@ -8,5 +8,5 @@ To learn javascript, the class give us an exercise to create todo app using java
 
 # Deployment
 This project is deployed to github environmet, you can access the web app below:
-https://badaibeibeh.github.io/badai-binar-hendri-todoapp/
+* https://badaibeibeh.github.io/badai-binar-hendri-todoapp/
 
