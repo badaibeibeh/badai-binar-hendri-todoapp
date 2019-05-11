@@ -1,7 +1,7 @@
 # badai-binar-hendri-todoapp
-To learn javascript, the class give us an exercise to create todo app using javascript. This project create by me, binar and hendri
+To learn javascript, the class give us an exercise to create todo app using javascript. Its a simple page that able to add your daily list and delete it when its done. This project create by me, binar and hendri
 
-## Member
+# Member
 * Hendri Agustino
 * Maria Binar Cahya
 * **Winata Arafad (Badai)**
